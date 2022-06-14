@@ -1,0 +1,648 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+   
+    
+}
+img{
+    display: block;
+}
+
+a{
+    color: white;
+}
+
+.left-image img, .right-image img{
+    display: block;
+    width: 50vw;
+}
+
+@font-face {
+    font-family: "primar";
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url(../res/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+
+@font-face {
+    font-family: "sans-semi";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(../res/fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "sans-100";
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url(../es/fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf);
+}
+
+
+@font-face {
+    font-family: "sans-light";
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url(../res/fonts/Source_Sans_Pro/SourceSansPro-Light.ttf);
+}
+
+
+@font-face {
+    font-family: "sans-black";
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url(../res/fonts/Source_Sans_Pro/SourceSansPro-Black.ttf);
+}
+
+@font-face {
+    font-family: "sans-ultralight";
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url(../res/fonts/Source_Sans_Pro/SourceSansPro-ExtraLight.ttf);
+}
+
+
+.body{
+    color: #3b556b;
+    font-family: 'Primar';
+
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 0.8);
+
+}
+
+
+
+nav{
+    display: flex;
+    align-items: center;
+   
+}
+
+
+.fa-grip-lines{
+    margin-right: -2rem;
+}
+
+nav div{
+    margin: 1rem;
+    font-family: 'Primar';
+    font-weight: 400;
+    font-size: 0.9rem;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+}
+
+nav div:hover, nav i:hover {
+    color: rgba(255, 255, 255, 1.5);
+}
+
+
+nav i {
+    margin-left: 2rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+nav .fa-cart-shopping {
+    margin-left: 4rem;
+}
+
+
+
+
+.container{
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+.headline-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-family: 'sans-light';
+    margin-top: 0.5rem;
+}
+
+.headline-right{
+    display: flex;
+}
+.headline-right h3{
+    font-size: 0.95rem;
+    margin-left: 2rem;
+}
+
+.top-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    border-top: 0.1rem solid lightgray;
+    font-family: 'sans-light';
+    height: 5vh;
+    border-bottom: 0.1rem solid lightgray;
+    font-size: 0.8rem;
+    background-color: rgba(245, 245, 247, 1);
+}
+
+.ad {
+    width: 80vw;
+    display: flex;
+    position:relative;
+    margin-top: 0.5rem;
+    position: relative;
+
+}
+
+.adleft-side, .adright-side{
+    width: 50%;
+}
+
+.adleft-side{
+
+    
+    margin-left: -4rem;
+
+    
+   
+     
+}
+.sticky-leftside
+{
+   
+    align-self: flex-start;
+    position: sticky;
+    top: 0;
+}
+
+.img-ad-container{
+    margin-top:10rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.adright-side{
+    width: 100%;
+}
+
+.img-ad-container img {
+    display: block;
+    width: 100%;
+ 
+    
+   
+}
+
+.adright-side{
+    margin-left:8rem;
+    margin-top: 4rem;
+    font-family: 'sans-light';
+}
+
+.adright-side h3{
+    color: lightcoral;
+    font-size: 1.rem;
+}
+
+.adright-side h1{
+    font-size: 2.5rem;
+    
+}
+
+
+
+
+.adright-side-colordiv-flex{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+
+.adright-side-colordiv{
+    margin-top: 3rem;
+}
+.color-choice-container{
+    width: 35%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.1rem solid lightgray;
+    border-radius: 20px;
+    margin: 1rem;
+    font-family: 'sans-light';
+    font-size: 1rem;
+
+}
+
+
+.black-circle, .green-circle, .red-circle, .blue-circle, .silver-circle{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    height:   2rem;
+    width: 2rem;
+    background: linear-gradient( 180deg, gray, gray 50%, black 50% ); 
+
+    border-radius: 50px;
+}
+
+.green-circle{
+    background: linear-gradient( 180deg, lightgreen, lightgreen 50%, green 50% ); 
+}
+
+.silver-circle{
+    background: linear-gradient( 180deg, lightgray, lightgray 50%, rgb(240,240,240) 50% ); 
+}
+.red-circle{
+    background: linear-gradient( 180deg, lightcoral, lightcoral 50%, rgb(220,0,0) 50% ); 
+}
+
+
+.blue-circle{
+    background: linear-gradient( 180deg, lightblue, lightblue 50%, rgb(0,0,150) 50% ); 
+}
+.rightside-line
+{
+    margin-top: 0.9rem;
+    height: 0.1rem;
+    background: lightgray;
+    width: 80%;
+}
+
+
+
+.ad-info-text{
+    display: flex;
+    justify-items:space-between;
+    align-items: center;
+    text-align: center;
+   
+}
+
+.detail-text{
+    margin-top: 0.9rem;
+    margin-right: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.detail-text p {
+    font-family: 'sans-light';
+    font-size: 1.2rem;
+}
+
+.icon-div{
+    margin-bottom: 1.2rem;
+}
+
+.rightside-infotext{
+    margin-top: 2rem;
+    font-size: 1.2;
+    font-family: 'sans-semi';
+}
+
+.graver-box{
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    border: 0.1rem solid lightgray;
+    padding: 2rem;
+    border-radius: 20px;
+
+}
+
+.graver-box-leftside h1{
+    font-size: 1rem;
+    font-family: 'sans-semi';
+}
+
+.graver-box-leftside h3{
+    font-size: 0.8rem;
+    color: black;
+    margin-top: 1rem;
+}
+
+.graver-box-leftside{
+    width: 60%;
+    color: black;
+
+
+}
+
+.price-div{
+    margin-top: 2rem;
+    background-color: rgba(245, 245, 247, 1);
+    width: 80%;
+}
+
+
+.price-div div{
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.price-div h2{
+    color: rgba(50, 105, 200, 1);
+    font-size: 0.9rem;
+}
+
+.price-line{
+    margin-top: 1rem;
+    height: 0.2rem;
+    width: 80%;
+    background-color: lightgray;
+}
+
+.care-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -0rem !important;
+}
+
+.care-text h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.care-div div { 
+ margin-left: 1rem;
+}
+
+.care-leftside{
+    width: 60%;
+    display: flex;
+    margin-left: -2rem;
+}
+.care-leftside-txt h1 {
+    font-size: 1.2rem;
+    width: 100%;
+    margin-left: 0rem;
+}
+.care-leftside-txt h2 {
+    font-size: 0.9rem;
+    width: 100%;
+    color: black;
+    margin-left: 0rem;
+}
+
+
+.care-leftside-txt h2 {
+    padding-top: 0.8rem;
+}
+
+
+.care-leftside-txt  h1{
+    margin-bottom: 0.7rem;
+}
+
+.care-leftside-txt h3{
+    color:black;
+    font-size: 0.9rem;
+}
+
+.care-rightside{
+    margin-right: 0.8rem;
+}
+.care-rightside{
+    width: 20%;
+}
+
+.care-rightside h3{
+    margin-right: -0.1rem;
+}
+
+.button_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.m{
+    margin-top: 1rem;
+    
+    padding-left: 4rem;
+    padding-right: 4rem;
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 0.8rem 6rem;
+    border: none;
+    background: #0071e3;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 7px;
+    font-family: 'sans-ultralight';
+    margin-bottom: 2rem;
+    
+  
+    
+}
+.m h1{
+    font-size:  1rem;
+    color:white
+
+}
+
+
+.motivation{
+    margin-top: 8rem;
+   
+}
+.motivation h1{
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'sans-semi';
+   
+}
+
+
+.upperdiv{
+    display: flex;
+    width: 60vw;
+    height: 40vh;
+   
+}
+
+.upperdiv-left{
+    width: 20vw;
+    height: 40vh;
+    background-color: rgba(127, 135, 125, 1);
+    border-radius: 30px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    transform: translate(-1000%, 0%);
+}
+
+.upperdiv-right{
+    width: 40vw;
+    height: 40vh;
+    background-color:rgba(236, 236, 236, 1);
+    border-radius: 30px;
+    position: relative;
+   
+}
+
+.bottomdiv-left{
+    margin-top: 1rem;
+    width: 40vw;
+    height: 40vh;
+    background-color:rgba(236, 236, 236, 1);
+    border-radius: 30px;
+    margin-right: 1rem;
+
+
+}
+
+.bottomdiv{
+    display: flex;
+}
+.bottomdiv-right{
+    margin-top: 1rem;
+
+    transform: translate(1000%,0);
+    width: 20vw;
+    height: 40vh;
+    background-color: rgba(40, 40, 40, 1);
+    border-radius: 30px;
+}
+
+.adright-side{
+    width: 35vw;
+}
+
+
+
+
+.upperdiv h1{
+    margin-left: 10%;
+    font-family: "sans-ultralight";
+    font-size: 1.5rem;
+    color: white;
+    text-align: left;
+    filter:brightness(200%); 
+    -webkit-filter:brightness(200%); 
+
+}
+
+.c1 {
+    position: relative;
+   
+   
+}
+
+.upperdiv-left{
+    position: relative;
+}
+
+.upperdiv-leftimg  img {
+ display: block;
+ height: 40vh;
+ width: 20vw;
+ top:-30%;
+ object-fit: cover;
+ position: absolute;
+
+
+}
+
+.upperdiv h2{
+margin-top: 0;
+margin-left: 10%;
+font-family: "sans-ultralight";
+font-size: 1.1rem;
+color: lightgray;
+text-align: left;
+filter:brightness(95%); 
+-webkit-filter:brightness(95%);
+}
+
+.rightimage {
+  
+}
+.rightimage img{
+    display: block;
+    width: 40vw;
+    height: 40vh;
+    border-radius: 30px ;
+}
+
+.neonh1 {
+    position: absolute;
+    left: 60%;
+    transform: translate(-50%, 0);
+    top: 5%;
+    font-family: 'sans-ultralight';
+    font-size: 2.2rem;
+    color: white;
+
+}
+
+.tophead{
+
+}
+
+.tophead img{
+    display: block;
+    width: 30vw;
+    height: 60vh;
+    position: relative;
+    z-index: 3
+    ;
+}
+
+.bottomdiv-left{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.bottomright-txt{
+    font-family: 'sans-ultralight';
+    font-weight: 1.5rem;
+    margin-bottom: 0.5rem;
+    position: absolute;
+    right: 2vw;
+    z-index: 5;
+    
+}
+
+.bottomright-txt h1 {
+    font-size: 2.5rem;
+}
+
+#title{
+    margin-bottom: 5vh;
+}
+
+.tophead img {
+    display: block;
+    width: 25vw;
+    height: 60vh;
+    position: relative;
+    object-fit: cover;
+    z-index: 3;
+}
